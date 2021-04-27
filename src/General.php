@@ -19,4 +19,9 @@ final class General
     {
         return $this->string;
     }
+
+    public static function create(string $string): self
+    {
+        return new self($string);
+    }
 }
