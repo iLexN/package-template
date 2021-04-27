@@ -8,8 +8,6 @@ final class General
 {
 
     /**
-     * Payload constructor.
-     *
      * @param string $string
      */
     private function __construct(
