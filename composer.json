@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "php": ">=8.0"
+        "php": ">=8.1"
     },
     "require-dev": {
         "infection/infection": "^0.25.3",
@@ -38,7 +38,7 @@
         "test-test": "vendor/bin/infection --threads=4",
         "bug-check": "phpstan analyse -l max src",
         "psalm": "psalm",
-        "rector-check": "rector process src --config rector-ci.php --dry-run",
+        "rector-check": "rector process src --config rector-ci.php --dry-run -vvv",
         "rector-fix": "rector process src --config rector-ci.php",
         "benchmark": "phpbench run --report=aggregate --retry-threshold=5 --progress=none"
     }

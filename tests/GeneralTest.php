@@ -13,6 +13,6 @@ final class GeneralTest extends TestCase
     public function testToJson(): void
     {
         $g = General::create('aa');
-        self::assertEquals('aa', $g->get());
+        self::assertEquals('aa', $g->string);
     }
 }

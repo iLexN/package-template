@@ -11,13 +11,8 @@ final class General
      * @param string $string
      */
     private function __construct(
-        private string $string,
+        public readonly string $string,
     ) {
-    }
-
-    public function get(): string
-    {
-        return $this->string;
     }
 
     public static function create(string $string): self
