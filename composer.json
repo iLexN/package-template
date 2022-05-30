@@ -22,7 +22,10 @@
         "vimeo/psalm": "^4.23"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+         "allow-plugins": {
+            "infection/extension-installer": true
+        }
     },
     "autoload": {
         "psr-4": {
@@ -40,6 +43,7 @@
         "psalm": "psalm",
         "rector-check": "rector process src --config rector-ci.php --dry-run",
         "rector-fix": "rector process src --config rector-ci.php",
-        "benchmark": "phpbench run --report=aggregate --retry-threshold=5 --progress=none"
+        "benchmark": "phpbench run --report=aggregate --retry-threshold=5 --progress=none",
+        "cover": "phpdbg -qrr vendor/bin/phpunit --coverage-text"
     }
 }
